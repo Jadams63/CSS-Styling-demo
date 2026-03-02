@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VAN</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jared Adams">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="sr-only">Van</h1>
+        <nav>
+            <a href="#">New Ocean</a>
+            <a href="#">Orange State</a>
+            <a href="#">Player</a>
+        </nav>
+    </header>
+
+
+    <nav class="van">
+        <h2>Van</h2>
+
+        <button class="hamburger">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 96">
+                <g clip-path="url(#a)">
+                    <path d="M93.77 18H13.4v18h80.37zm0 24H13.4v18h80.37zm0 24H13.4v18h80.37z" fill="#000" />
+                </g>
+                <defs>
+                    <clipPath id="a">
+                        <path fill="#fff" d="M91.85 0H0v96h91.85z" />
+                    </clipPath>
+                </defs>
+                <title>Click to Toggle Menu</title>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 18h16M4 12h16M4 6h16" />
+            </svg>
+        </button>
+
+        <ol class="menu collapsed">
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">SHAPLEY</a></li>
+            <li><a href="#">ANGULAR</a></li>
+            <li><a href="#">TODDLER</a></li>
+            <li><a href="#">MATERNITY</a></li>
+        </ol>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <picture>
+                <source srcset="img/horizontal-scroll/held-child-large.avif" media="(min-width: 800px)">
+                <img src="img/horizontal-scroll/held-child-small.avif" alt="A lady holding a child">
+            </picture>
+        </div>
+        <div>
+            <h2>SALE</h2>
+            <p>Extra 50% Off Markdowns</p>
+        </div>
+    </section>
+
+    <section class="division">
+        <h2>Shop by Division</h2>
+
+        <div class="card-holder">
+            <div class="card">
+                <picture>
+                    <source srcset="img/horizontal-scroll/seated-hiker-portrait.avif" media="(min-width: 800px)">
+                    <img src="img/horizontal-scroll/seated-hiker-landscape.avif" alt="Hiker sitting on a rock">
+                </picture>
+                <section>
+                    <h3>Everyday Essentials</h3>
+                    <p>Dive into our Everyday Essentials collection for must-have pieces that effortlessly blend style
+                        and comfort.</p>
+                    <p><a href="#">Check it Out <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+                                <path d="m8 1 5 5m0 0-5 5m5-5H1" stroke="#6178A6" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> </a></p>
+                </section>
+            </div>
+            <div class="card">
+                <picture>
+                    <source srcset="img/horizontal-scroll/yoga-portrait.avif" media="(min-width: 800px)">
+                    <img src="img/horizontal-scroll/yoga-landscape.avif" alt="Lady doing yoga">
+                </picture>
+                <section>
+                    <h3>Active & On-the-GO</h3>
+                    <p>Get moving with our Activewear line, featuring performance-driven styles designed to keep up with
+                        you.</p>
+                    <p><a href="#">Go, go, go! <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+                                <path d="m8 1 5 5m0 0-5 5m5-5H1" stroke="#6178A6" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> </a></p>
+                </section>
+            </div>
+            <div class="card">
+                <picture>
+                    <source srcset="img/horizontal-scroll/held-baby-portrait.avif" media="(min-width: 800px)">
+                    <img src="img/horizontal-scroll/held-baby-landscape.avif" alt="Baby held to the sky">
+                </picture>
+                <section>
+                    <h3>Kids Styles</h3>
+                    <p>Playful, practical, and oh-so-cool! Step into a world of clothing options that your little ones
+                        will love.</p>
+                    <p><a href="#">Let's Do it, Baby <svg fill="none" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 14 12">
+                                <path d="m8 1 5 5m0 0-5 5m5-5H1" stroke="#6178A6" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a></p>
+
+
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="black-bars">
+
+        <div><a href="#">
+                <h4>Four Brands, One Cart</h4>
+                <p>Quick and easy checkout</p>
+            </a></div>
+        <div><a href="#">
+                <h4>Members Get More</h4>
+                <p>Join our loyalty program</p>
+            </a></div>
+        <div><a href="#">
+                <h4>Same-Day Delivery By Uber</h4>
+                <p>Get your orders ASAP</p>
+            </a></div>
+        <div><a href="#">
+                <h4>Buy Now, Pay Later</h4>
+                <p>Apply for our card</p>
+            </a></div>
+
+    </div>
+
+    <section class="scroll-section">
+        <h3>More New Arrivals You’ll Love</h3>
+        <div class="scroll-wrapper">
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/footed-one-piece.avif" alt="one piece baby shirt">
+                <p>Favorites Organic Cotton Footed One-Piece</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/holiday-set.avif" alt="set of holiday pajamas">
+                <p>Organic Cotton Holiday PJ Set</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/ribbed-pants.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/footed-one-piece.avif" alt="one piece baby shirt">
+                <p>Favorites Organic Cotton Footed One-Piece</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/holiday-set.avif" alt="set of holiday pajamas">
+                <p>Organic Cotton Holiday PJ Set</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/ribbed-pants.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+            <div class="scrollable">
+                <img src="img/horizontal-scroll/puppies-pajamas.avif" alt="pajamas with puppies">
+                <p>Organic Cotton Mix and Match Puff Sleeve t-shirt</p>
+            </div>
+        </div>
+    </section>
+
+    <aside class="overlay">
+        <div class="large-flexed modal">
+            <!-- This is an empty placeholder for the modal background -->
+            <div class="modal-bg"></div>
+            <!-- Here is the modal windows content -->
+            <div class="modal-body">
+                <button id="close" class="close flexed">
+                    Close
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Click to close window</title>
+                        <path d="M8.99881 1V17" stroke="#6178A6" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.00009 9H17.0001" stroke="#6178A6" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <h3>Unlock so much more.</h3>
+                <p>Sign up for our Member Rewards Program to receive 30% off in store and online because youve earned
+                    it.</p>
+                <div><a href="membership.html">Sign Up Now</a></div>
+                <p>* Offer valid for new members only. Exclusions apply. See sign up page for <a
+                        href="membership.html">offer details.</a></p>
+
+            </div> <!-- end of modal-body -->
+        </div> <!-- end of modal -->
+    </aside>
+    <footer>
+        <div class="footer-lists">
+            <ul>
+                <li><span>Customer Support</span></li>
+                <li>
+                    <a href="#">Customer Service</a>
+                </li>
+                <li>
+                    <a href="#">Buy Online</a>
+                </li>
+                <li>
+                    <a href="#">Pick Up In-Store.</a>
+                </li>
+                <li>
+                    <a href="#">Store Locator</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li><span>About Us</span></li>
+                <li>
+                    <a href="#">Our Values</a>
+                </li>
+                <li>
+                    <a href="#">Sustainibility</a>
+                </li>
+                <li>
+                    <a href="#">Equality and Belonging</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li><span>Van Good Rewards</span></li>
+                <li>
+                    <a href="#">Join VAN</a>
+                </li>
+                <li>
+                    <a href="#">Good Rewards</a>
+                </li>
+                <li>
+                    <a href="#">My Rewards & Benifits</a>
+                </li>
+                <li>
+                    <a href="#">Learn More</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="black-footer">
+            <p>© 2024 VAN, INC.| <a href="#">PRIVACY POLICY</a> | <a href="#">YOUR PRIVACY CHOICES</a> | <a
+                    href="#">TERMS OF USE</a> | <a href="#">SUSTAINABILITY</a>
+            </p>
+        </div>
+    </footer>

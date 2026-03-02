@@ -1,0 +1,638 @@
+/* Colour Palette */
+:root {
+    --neutral: #edeae7;
+}
+
+/* Universal Styles */
+/* This sets the font size at the highest level of the dom (the root). 16px = 1rem - based on the default font size - 1rem = 16, 2rem = 32, 3 rem = 48, 4 rem = 64, 72, 88, etc */
+html {
+
+}
+
+body {
+
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top:  -9999px;
+    visibility: hidden;
+}
+
+.flexed {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+header nav{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    padding: 2rem 0 2rem 0rem;
+}
+.van{
+justify-content: center;
+gap: 5rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.hero div{
+    background-color: rgb(0,0, 0, 0.4);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.division{
+    padding: 2rem 5% 2rem 5%;
+}
+.division section{
+    padding: 1rem;
+}
+.division .card{
+    border: 1px solid #D8D8D8;
+    margin-bottom: 2rem;
+}
+.division h2{
+    margin-bottom: 1rem;
+}
+
+.black-bars {
+    padding: 0 5% 2rem 5%;
+}
+.black-bars div{
+    background-color: #333333;
+   text-align: center;
+    margin-bottom: 1rem;
+    padding: .8rem 0 .8rem 0;
+}
+
+
+.division .card picture img{
+   padding: 0;
+    margin-bottom: 0rem;
+}
+.footer-lists ul{
+    text-align: center;
+    text-decoration: none;
+}
+.footer-lists ul>li:nth-child(1){
+  margin-bottom: 2rem;
+}
+.footer-lists ul{
+  margin-bottom: 3rem;
+}
+.black-footer{
+    background-color: black;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+.black-footer p{
+    padding: 0 5% 0 5%;
+}
+.m-header{
+    padding: 3rem 5% 3rem 5%;
+}
+.m-header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+    
+}
+.m-header h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.info{
+    display: flex;
+}
+.info svg{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.info input{
+    margin-right: 1rem;
+}
+label{
+    display: block;
+}
+input{
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+.form-holder, .faq{
+    padding: 0 5% 0 5%;
+}
+.form-holder form, .accordion{
+  border: lightgray solid 1px;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.form-holder form label:last-child{
+   display: inline-block;
+}
+.form-holder form label{
+    margin-bottom: .2rem;
+}
+form input[type="checkbox"]{
+    width: unset;
+    background-color: blue;
+}
+.form-holder form button{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+.form-holder form ul{
+    list-style:inside;
+   margin-bottom: 2rem;
+
+}
+.form-holder form ul li{
+    margin-bottom: .2rem;
+}
+.ul-title{
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+/* Typographical Styles */
+.modal p a{
+    color: #6178A6;
+    text-decoration: none;
+}
+header nav a, .black-bars p,.black-footer p, .m-header ul li {
+    color: white;
+   font-family: "Inter", sans-serif;
+   font-size: 1.5rem;
+}
+header nav a:nth-child(1), .m-header ul li:nth-child(1){
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header nav a:nth-child(2),.m-header ul li:nth-child(2){
+font-weight: 300;
+text-transform: uppercase;
+}
+header nav a:nth-child(3),.m-header ul li:nth-child(3){
+    text-transform: uppercase;
+}
+.m-header ul span{
+font-family: "Inria Serif", sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+}
+.m-header ul li{
+    color: black;
+    font-size: 1.8rem;
+}
+.m-header h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem
+}
+.van h2{
+    font-family: "Inria Serif", sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero div p, .hero div h2, .black-bars div h4, .form-holder form button{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.hero  div h2{
+    font-size: 12.5rem;
+    line-height: 12.5rem;
+}
+.hero  div p{
+    font-size: 3rem;
+    
+}
+.division a{
+    display: flex;
+    justify-content: right;
+}
+.division h2, .scroll-section h3, .modal h3, .accordion h2{
+    font-size: 3rem;
+    color: #333333;
+    font-family: "Inria Sans", sans-serif;
+}
+.division h3, .footer-lists ul span, .modal-body div a, form label{
+    font-size: 1.5rem;
+    color: #333333;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold;
+}
+.division p, .division a{
+    font-size: 1rem;
+    color: #333333;
+    font-family: "Inria Sans", sans-serif;
+}
+.black-bars div a h4, .black-bars div a p{
+    color: white;
+    text-decoration: none;
+
+}
+.black-bars div a h4{
+    font-size: 1.6rem;
+}
+.scroll-section h3{
+    color: black;
+}
+.scroll-section p, .m-header h2, .m-header a{
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+.footer-lists ul li a, .modal p, .offers, .faq .accordion p, .faq .accordion li{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333333;
+}
+.footer-lists ul span{
+    text-transform: uppercase;
+}
+
+.black-footer p{
+    font-size: .8rem;
+}
+.black-footer p a, .form-holder form button{
+    color: white;
+    text-decoration: none;
+}
+.menu li a{
+    font-family: "Inter", sans-serif;
+   font-weight:500;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.modal p:last-child{
+    color: #666666;
+}
+form p, form li, form input{
+    font-size: .9rem;
+    font-family: "Inter", sans-serif;
+    color: #666666;
+}
+.form-holder form h2{
+    color: #333333;
+    text-transform: unset;
+   font-family: "Inria Sans", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+label{
+    font-size: 1.4rem;
+}
+form p {
+    margin-bottom: 2rem;
+}
+.form-holder form button{
+    font-size: 1.5rem;
+}
+.offers{
+    font-size: 1rem;
+    font-weight: normal;
+    
+}
+.accordion h2{
+    font-size: 2rem;
+ 
+}
+.faq .accordion p, .faq .accordion li{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.faq .accordion li{
+    list-style: inside;
+}
+
+
+.division .card-holder .card section a{
+    color: #6178A6;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+
+/* Utility Styles */
+.scroll-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+.scroll-section{
+    padding: 0 5% 0 5%;
+    margin: 1rem 1rem;
+}
+.scrollable{
+    flex: 0 0 12rem;
+    margin: 2rem 0 2rem 0;
+}
+
+/* Navigation */
+header svg{
+    width: 2rem;
+    height: 2rem;
+}
+.hamburger svg {
+    width: 5rem;
+    display: block;
+}
+.division a svg{
+    width: 1rem;
+}
+.hamburger {
+    background-color: unset;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.expanded {
+    max-height:unset;
+    opacity: 1;
+    visibility: visible;
+}
+.m-header a{
+display: flex;
+align-items: center;
+gap: .5rem;
+font-size: 1.1rem;
+}
+
+
+
+/* modal window */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    min-height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.modal {
+    background-color: var(--neutral);
+    border-radius: 10px;
+   margin: 1rem;
+   max-width: 1020px; /* This is the max width of the modal. */
+   width: calc(100% - 2rem); 
+   /* We're using the calc function to subtract 1rem here to account for the padding the window needs all the way around.*/
+   position: fixed;
+   left: 50vw;
+   top: 50vh;   /* This will center align a fixed element in the middle of the screen. */
+   transform: translate(calc(-50% - 1rem), calc(-50% - 1rem));
+}
+
+.modal-bg {
+    background: url(../img/horizontal-scroll/hiker-landscape.avif) center / cover no-repeat;
+    height: 260px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.modal-body {
+    padding: 4rem 2rem;
+}
+
+.close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    gap: 0.5rem;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    margin: 0 0 3rem auto;
+}
+
+.close svg {
+    width: 1.5rem;
+}
+
+.close svg path {
+    stroke: var(--heading);
+    transition: all 0.3s;
+}
+
+.close:hover,
+.close:hover svg path {
+    color: var(--emerald);
+    stroke: var(--emerald);
+}
+.modal-body div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.modal-body div, .form-holder form button{
+  background-color: #00642D;
+  border-radius: 5px;
+  text-align: center;
+  padding: .5rem 0 .5rem 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.modal .modal-body svg{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    
+   stroke: black;
+   rotate: 45deg;
+}
+
+/* Accordion component*/
+.accordion-content {
+    padding-top: 1rem;
+}
+.accordion button {
+    display: flex;
+    gap: 0;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    color: #6178A6;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.toggle-btn button{
+   background-color: unset;
+}
+.accordion svg {
+    height: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.toggle-btn:has(+ .expanded) svg {
+    transform: rotate(45deg);
+}
+.accordion .collapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion .expanded {
+    max-height: 100%;
+    opacity: 10;
+    visibility: visible;
+    }
+
+.faq{
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+.accordion h2{
+    margin-bottom: 3rem;
+}
+.accordion-item{
+    border-bottom: lightgrey solid 1px;
+}
+.accordion-item:last-child{
+    border-bottom: none;
+}
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* hover and focus styles */
+a:hover, a:focus, .footer-lists ul li a:hover, .footer-lists ul li a:focus{
+    text-decoration: underline;
+    text-decoration-color: #333333;
+ }
+ .black-bars div:hover, .black-bars div:focus, .black-bars div a:hover, .black-bars div a:focus,.form-holder form button {
+     background-color: #00642D;
+     text-decoration: none;
+     cursor: pointer;
+     
+ }
+/* Media queries allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other features or characteristics such as screen resolution or orientation, aspect ratio, browser viewport  */
+/* Media Queries */
+@media screen and (min-width: 800px) {
+header nav{
+    justify-content: start;
+    padding-left: 4rem;
+}
+
+.hero{
+  position: relative;
+}
+.hero div{
+    padding-bottom: 0rem;
+}
+.hero div:last-of-type{
+    position: absolute;
+    width: 100%;
+    top:50%;
+}
+.card-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 10% 0 10%;
+}
+.card{
+    width: 30%;
+}
+.scroll-wrapper{
+    margin:0% 10% 0 10%;
+}
+.footer-lists{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 15% 0 15%;
+    margin-bottom: 5rem;
+}
+@media screen and (min-width: 1400px) {
+    .hamburger {   /* First, lets hide the .hamburger menu  */
+        display: none;
+    }
+    .collapsed, 
+        .expanded {
+            max-height: unset;
+            opacity: 1;
+            visibility: visible;
+         } 
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        
+    }
+    .black-bars{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .black-bars div{
+        width: 24%;
+      
+    }
+    
+    .large-flexed {
+        display: flex;
+    }
+
+    .modal {
+        max-width:960px
+    }
+
+    .modal-body {
+        padding: 6rem 4rem;
+    }
+
+    .modal-bg {
+        background: url(../img/horizontal-scroll/hiker-portrait.avif) center / cover no-repeat;
+        height: 600px;
+       width: 420px;
+        border-radius: 10px 0 0 10px;
+    }
+    .faq, .m-header, .form-holder{
+        padding: 0 30% 0 30%;
+    }
+    .m-header ul{
+        margin-bottom: 2rem;
+    }
+    .m-header {
+        margin-top: 3rem;
+    }
+      
+}}
