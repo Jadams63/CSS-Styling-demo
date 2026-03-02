@@ -7,8 +7,8 @@
 
 ---
 
-![pop up window screenshit](/img/readMePage1.png)
+![pop up window screenshot](/img/readMePage1.png)
 
 ---
 
-![pop up window screenshit](/img/readMePage2.png)
+![pop up window screenshot](/img/readMePage2.png)
